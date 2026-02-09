@@ -16,11 +16,4 @@ export default defineConfig({
 		service: passthroughImageService(),
 	},
 	integrations: [mdx(), sitemap(), tailwind(), react()],
-	vite: {
-		resolve: {
-			alias: {
-				"react-dom/server": "react-dom/server.edge",
-			},
-		},
-	},
 });
